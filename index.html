@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>User registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Heading  -->
+    <h1>Blood Donation Form</h1>
+    <form></form>
+    <div class="testbox">
+      <form action="/">
+        <h3>User Record List</h3>
+        <div class="item">
+            <!-- user name  -->
+          <p>Full Name</p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="First" />
+            <input type="text" name="name" placeholder="Last" />
+          </div>
+        </div>
+        <!-- Address Details  -->
+        <div class="item">
+          <p>Address</p>
+          <input type="text" name="name" placeholder="Street address" />
+          <input type="text" name="name" placeholder="Street address line 2" />
+          <div class="city-item">
+            <input type="text" name="name" placeholder="City" />
+            <input type="text" name="name" placeholder="Region" />
+            <!-- postal code with validation -->
+            <input type="text" name="username" placeholder="Postal Code" />
+            <p>Postal code must be contain 6 digit</p>
+          </div>
+        </div>
+        <!-- gender  -->
+        <div class="item">
+          <p>Gender</p>
+          <input type="Gender" name="name" placeholder="Gender" />
+        </div>
+        <div class="item">
+          <p>Weight</p>
+          <input type="text" name="name" />
+        </div>
+        <!-- blood group list  -->
+        <p>Blood Group</p>
+        <select>
+          <option value="">Select</option>
+          <option value="1">O+</option>
+          <option value="2">O-</option>
+          <option value="3">A+</option>
+          <option value="4">A-</option>
+          <option value="5">B+</option>
+          <option value="6">B-</option>
+          <option value="7">AB+</option>
+          <option value="8">AB-</option>
+        </select>
+        <!-- email for validation -->
+        <label class="item" for="">Email</label>
+        <input type="text" name="email" placeholder="username@gmail.com" />
+        <p>Email must be a valid address, e.g. me@mydomain.com</p>
+        <!-- phone number for validation  -->
+        <label for="">Phone Number</label>
+        <input type="text" name="telephone" />
+        <p>Number must be a valid indian (+91) mobile number (10 digits)</p>
+        <!-- form filling date  -->
+        <div class="item">
+          <p>Form Filling Date</p>
+          <input type="date" name="name" required />
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+          <p>Have You Donated Previously In Six Month's?</p>
+          <select>
+            <option value="">Select</option>
+            <option value="1">No</option>
+            <option value="2">Yes</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>
+            Is There Any History Of Surgery Or Blood Transfusion In The Past Six
+            Months?
+          </p>
+          <input type="text" name="name" />
+        </div>
+        <div class="item">
+          <p>Complaint filed on behalf of</p>
+          <input type="text" name="name" />
+        </div>
+        <div class="item">
+          <p>Any Other Details Regarding Your Medical Helth</p>
+          <textarea rows="5"></textarea>
+        </div>
+        <!-- subbmit button  -->
+        <div class="btn-block">
+          <button type="submit" href="/">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
